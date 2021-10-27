@@ -1,17 +1,17 @@
-import calculadoraPage from '../pageobjects/calculadora.page';
+import calculadora from '../pageobjects/calculadora.page';
 
 describe('Testes básicos', () => {
     it('Deve abrir a pagina corretamente', async () => {
-        await calculadoraPage.open();
+        await calculadora.abrir();
 
-        await expect(calculadoraPage.body).toBeExisting();
-        await expect(calculadoraPage.body).toHaveTextContaining('Calculadora');
+        await expect(calculadora.body).toBeExisting();
+        await expect(calculadora.body).toHaveTextContaining('Calculadora');
     });
-    it.only('Tenta clicar no botao 3', async () => {
-        await calculadoraPage.open();
+    it('Tenta clicar no botao 3', async () => {
+        await calculadora.abrir();
 
-        await calculadoraPage.btn3.click()
-        await expect(calculadoraPage.visor).toBeExisting();
-        await expect(calculadoraPage.visor).toHaveValue('3');
+        await calculadora.btn3.click()
+        await expect(calculadora.visor).toBeExisting();
+        await expect(calculadora.visor).toHaveValue('3');
     });
 });
