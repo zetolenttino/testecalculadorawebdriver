@@ -16,7 +16,7 @@ class Calculadora {
     get btnSoma() { return $('#btnSoma') }
     get btnMenos() { return $('#btnMenos') }
     get btnMultiplicacao() { return $('#btnMultiplicacao') }
-    get btnDivisao() { return $('#btnDivisao') }
+    get btnDivisao() { return $('#btnDivisor') }
     get btnVirgula() { return $('#btnVirgula') }
     get btnPonto() { return $('#btnPonto') }
     get btnResultado() { return $('.resultado') }
