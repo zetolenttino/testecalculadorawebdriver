@@ -19,6 +19,7 @@ class Calculadora {
     get btnDivisao() { return $('#btnDivisor') }
     get btnVirgula() { return $('#btnVirgula') }
     get btnPonto() { return $('#btnPonto') }
+    get btnAC() { return $('#btnAC') }
     get btnResultado() { return $('.resultado') }
     get visor() { return $('#visor') }
     /**
